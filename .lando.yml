@@ -1,0 +1,31 @@
+name: wordpress-multisite
+recipe: wordpress
+config:
+  webroot: web
+  xdebug: true
+  via: nginx
+  multisite: true
+services:
+  appserver:
+    type: php
+    xdebug: true
+  database:
+    type: mysql
+  mail:
+    type: mailhog
+proxy:
+  appserver:
+    - wordpress.lndo.site
+  mail:
+    - mail.wordpress.lndo.site
+  database:
+    - db.wordpress.lndo.site
+tooling:
+  wp:
+    service: appserver
+  composer:
+    service: appserver
+  php:
+    service: appserver
+  npm:
+    service: appserver

@@ -1,8 +1,0 @@
-## Begin Local Host ##
-
-::1 phpmyadmin.local #Local Site
-127.0.0.1 phpmyadmin.local #Local Site
-::1 wordpress.local #Local Site
-127.0.0.1 wordpress.local #Local Site
-
-## End Local Host ##

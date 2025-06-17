@@ -1,0 +1,8 @@
+{
+    "php.validate.executablePath": "lando",
+    "intelephense.environment.phpBin": "lando",
+    "php.debug.pathMappings": {
+        "/app": "${workspaceFolder}"
+    },
+    "phpcs.standard": "WordPress"
+}
