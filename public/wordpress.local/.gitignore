@@ -1,6 +1,0 @@
-*
-!.env.local
-!.gitignore
-!composer.json.example
-!phpinfo.php
-!xdebug.php
